@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="product_discount_scheduler" resource="default" engine="innodb" comment="product special and group price scheduler in bulk">
+        <column xsi:type="int" name="id" padding="11" unsigned="false" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="timestamp" name="special_Price_from" padding="11" unsigned="false" nullable="false" comment="Special Price From"/>
+        <column xsi:type="timestamp" name="special_Price_to" padding="11" unsigned="false" nullable="false" comment="Special Price To"/>
+        <column xsi:type="json" name="discount_data" padding="11" unsigned="false" nullable="false" comment="Discount Data"/>
+        <column xsi:type="text" name="csv_file_path" padding="11" unsigned="false" nullable="false" comment="Csv file path"/>
+        <column xsi:type="boolean" name="is_applied" padding="11" unsigned="false" nullable="false" comment="Is Applied"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" padding="11" unsigned="false" nullable="false" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" padding="11" unsigned="false" nullable="false" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>
