@@ -35,6 +35,14 @@ class DiscountScheduler extends \Magento\Framework\Model\AbstractModel implement
         return $this->getData(self::ENTITY_ID);
     }
 
+     /**
+     * Set EntityId.
+     */
+    public function setId($id)
+    {
+        return $this->setData(self::ENTITY_ID, $id);
+    }
+
     /**
      * Get Special Price From.
      *

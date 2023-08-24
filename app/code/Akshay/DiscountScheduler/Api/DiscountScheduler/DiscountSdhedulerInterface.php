@@ -21,6 +21,11 @@ interface DiscountSdhedulerInterface
     public function getId();
 
     /**
+     * Set EntityId.
+     */
+    public function setId($id);
+
+    /**
      * Get Special Price From.
      *
      * @return timestamp
