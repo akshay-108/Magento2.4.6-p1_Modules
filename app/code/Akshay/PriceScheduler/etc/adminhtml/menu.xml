@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Akshay_PriceScheduler::sheduleMenu" title="Price Scheduler" module="Akshay_PriceScheduler" sortOrder="51" resource="Akshay_PriceScheduler::sheduleMenu" action="grid/grid/index"/>
+        <!-- <add id="Akshay_PriceScheduler::schedule" title="Scheduler" module="Akshay_PriceScheduler" sortOrder="10" action="grid/grid/index" resource="Akshay_PriceScheduler::schedule" parent="Akshay_PriceScheduler::sheduleMenu"/> -->
+    </menu>
+</config>

@@ -1,5 +1,0 @@
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="Akshay_DiscountScheduler::manager" title="Discount Scheduler" module="Akshay_DiscountScheduler" sortOrder="70" resource="Akshay_DiscountScheduler::manager" action="discountscheduler/index/index"/>
-    </menu>
-</config>
